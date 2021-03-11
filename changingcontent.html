@@ -7,16 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="text2">I think</p>
+    <!-- <p id="text2">I think</p> -->
     <!-- <p id="secondParagraph">Javascript is ...</p> -->
-    <button id="myButton">Click here!</button>
+    <p id="emptyPara"></p>
+    <!-- <button id="myButton">Click here!</button> -->
+    <button id="createPara">Create Text</button>
     <script type="text/javascript">
-        document.getElementById("myButton").onclick=function()
-        {
-            alert("Button Clicked!");
-            document.getElementById("text2").innerHTML =  document.getElementById("text2").innerHTML+" Javascript is awesome";
-        }
-       
+        // document.getElementById("myButton").onclick=function()
+        // {
+        //     // alert("Button Clicked!");
+        //     // document.getElementById("text2").innerHTML =  document.getElementById("text2").innerHTML+" Javascript is awesome";
+          
+        // }
+       document.getElementById("createPara").onclick = function()
+       {
+           document.getElementById("emptyPara").innerHTML = "Clicked!";
+       }
     </script>
 </body>
 </html>
