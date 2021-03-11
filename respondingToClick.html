@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">Click on the button below to change the text!</p>
+    <button id="myButton">Click here!</button>
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick=function()
+        {
+            alert("Button Clicked!");
+            document.getElementById("text").innerHTML = "The text has been changed successfully!";
+        }
+        //We are instructing the machine that when the button is clicked, do whatever I want to do in this function block
+    </script>
+</body>
+</html>
