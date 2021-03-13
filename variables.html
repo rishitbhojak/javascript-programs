@@ -7,10 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="text" name="" id="text">
+    <button type="submit" id = "btn">Change text</button> 
+    <p id = "oldText">This is some text</p>
     <script>
         // var x=5;
-        var name = "Rishit";
-        alert(name);
+        // var name = "Rishit";
+        // alert(name);
+        document.getElementById("btn").onclick = function(){
+            var textEntered = "";
+            textEntered = document.getElementById("text").value;
+            document.getElementById("oldText").innerHTML = textEntered;
+        }
     </script>
+    
 </body>
 </html>
